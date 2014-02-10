@@ -1,0 +1,30 @@
+//- Main Layout of our app
+//- MEAN Boilerplate by @Jmlevick - http://twitter.com/Jmlevick
+//- License: Beerware
+
+doctype
+html(ng-app, lang='en-US')
+head
+    meta(charset='UTF-8')
+    title MEAN Boilerplate: myApp
+    meta(name='description', content='Lorem Ipsum Dolor sit amet')
+    meta(name='keywords', content='foo, bar, baz')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    //if lt IE 9
+      script(src='http://html5shim.googlecode.com/svn/trunk/html5.js')
+    link(rel='shortcut icon', href='../favicon.ico')
+    link(rel='stylesheet', href='../css/bootstrap.min.css')
+    link(rel='stylesheet', href='../css/bootstrap-theme.min.css')
+    link(rel='stylesheet', href='../css/overrides.css')
+
+  body
+    div.container
+        div.row
+            block content
+
+    script(src='../js/jquery.min.js')
+    script(src='../js/angular.min.js')
+    script(src='../js/angular-resource.min.js')
+    script(src='../js/bootstrap.min.js')
+    script(src='../js/custom.js')
+    link(href='../css/font-awesome.min.css', rel='stylesheet')

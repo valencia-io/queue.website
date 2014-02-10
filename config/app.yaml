@@ -1,0 +1,19 @@
+default:
+  adminuser: "admin"
+  password: "Mypass000"
+  section_token: "Please enter admin credentials"
+
+development:
+  adminuser: "admin"
+  password: "Mypass000"
+  section_token: "Please enter admin credentials"
+
+test:
+  adminuser: "admin"
+  password: "Mypass000"
+  section_token: "Please enter admin credentials"
+
+production:
+  adminuser: "admin"
+  password: "Mypass000"
+  section_token: "Please enter admin credentials"
