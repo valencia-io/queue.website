@@ -13,7 +13,6 @@ var auth = require('http-auth');
 var app = express();
 var port = 3000;
 var server = app.listen(port);
-var routes = require('./routes')(app);
 
 // Models
 var Dummy = require('./entities/dummies/model');
@@ -27,6 +26,7 @@ app.use(express.json());
 app.use(express.urlencoded());
 app.use(express.bodyParser());
 app.use(express.methodOverride());
+var routes = require('./routes')(app);
 app.use(app.router);
 app.use(require('less-middleware')({ src: path.join(__dirname, 'public') }));
 app.use(express.static(path.join(__dirname, 'public')));

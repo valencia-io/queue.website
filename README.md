@@ -28,7 +28,7 @@ Favor de leer: [Workflow NodeJS: Usando el MEAN Stack en Linux y MacOS][2]
 
 
 Creado por: [@Jmlevick][3]  
-Licencia: [Beerware][4]
+Licencia: [Coffeeware][4]
 
 [![endorse](http://api.coderwall.com/jmlevick/endorsecount.png)](http://coderwall.com/jmlevick)
 
@@ -36,4 +36,4 @@ Licencia: [Beerware][4]
   [1]: https://spideroak.com/share/PBSW433EMVZXS43UMVWXG/78656e6f6465/var/CDN/xenodecdn/github-assets/mean-boilerplate-logo.png
   [2]: http://xenodesystems.blogspot.com/2014/02/workflow-nodejs-usando-el-mean-stack-en.html
   [3]: http://twitter.com/Jmlevick
-  [4]: http://en.wikipedia.org/wiki/Beerware
+  [4]: https://github.com/Jmlevick/coffeeware-license
