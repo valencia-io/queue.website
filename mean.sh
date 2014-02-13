@@ -1,5 +1,5 @@
 # MEAN Boilerplate by @Jmlevick - http://twitter.com/Jmlevick
-# License: Beerware
+# License: Coffeeware
 
 # MEAN Boilerplate app initialization script
 # Helps creating a new webapp based on the MEAN Stack (MongoDB, ExpressJS, AngularJS & NodeJS),

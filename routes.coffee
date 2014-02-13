@@ -1,6 +1,6 @@
 # App Routes
 # MEAN Boilerplate by @Jmlevick - http://twitter.com/Jmlevick
-# License: Beerware
+# License: Coffeeware
 
 module.exports = (app) ->
 

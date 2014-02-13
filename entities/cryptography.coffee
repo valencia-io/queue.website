@@ -1,6 +1,6 @@
 # Random Salt Generator
 # MEAN Boilerplate by @Jmlevick - http://twitter.com/Jmlevick
-# License: Beerware
+# License: Coffeeware
 
 crypto = require('crypto')
 

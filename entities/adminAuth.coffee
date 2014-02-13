@@ -1,6 +1,6 @@
 # Admin Digest Auth Middleware
 # MEAN Boilerplate by @Jmlevick - http://twitter.com/Jmlevick
-# License: Beerware
+# License: Coffeeware
 
 auth = require('http-auth')
 crypto = require('crypto')
