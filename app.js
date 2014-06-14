@@ -9,6 +9,12 @@ var express = require('express');
 var http = require('http');
 var path = require('path');
 var auth = require('http-auth');
+var favicon = require('serve-favicon');
+var logger = require('morgan');
+var bodyParser = require('body-parser');
+var methodOverride = require('method-override');
+var static = require('serve-static');
+var errorHandler = require('errorhandler')
 
 var app = express();
 var port = 3000;
@@ -20,16 +26,13 @@ var Dummy = require('./entities/dummies/model');
 // all environments
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
-app.use(express.favicon(path.join(__dirname, 'public/favicon.ico'))); 
-app.use(express.logger('dev'));
-app.use(express.json());
-app.use(express.urlencoded());
-app.use(express.bodyParser());
-app.use(express.methodOverride());
+app.use(favicon(path.join(__dirname, 'public/favicon.ico'))); 
+app.use(logger('dev'));
+app.use(bodyParser());
+app.use(methodOverride());
 var routes = require('./routes')(app);
-app.use(app.router);
-app.use(require('less-middleware')({ src: path.join(__dirname, 'public') }));
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(require('less-middleware')(path.join(__dirname, 'public')));
+app.use(static(path.join(__dirname, 'public')));
 
 
 // Error Handling
@@ -47,7 +50,7 @@ app.use(function(err, req, res, next) {
 
 // Development only
 if ('development' == app.get('env')) {
-  app.use(express.errorHandler());
+  app.use(errorHandler());
 }
 
 http.createServer(app).listen(app.get(port), function(){
