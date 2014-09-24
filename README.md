@@ -37,10 +37,9 @@ Assuming you already have the needed **MEAN Stack** pieces installed on your com
 
 Replacing **MY_APP** with the name of the app/site you wanna create... To see your newly created app in action, just run:
 
-    1. cd MY_APP
-    2. npm start
+    npm start
     
-And open **http://localhost:3000** in your browser.
+From inside your app's folder and then open **http://localhost:3000** in your browser.
 
 Created by: [@Jmlevick][2]  
 License: [Coffeeware][3]
