@@ -1,13 +1,10 @@
 # The Controller
-# MEAN Boilerplate by @Jmlevick - http://twitter.com/Jmlevick
-# License: Coffeeware
+# MEAN Boilerplate by @Jmlevick <https://twitter.com/Jmlevick>
+# License: Coffeeware <https://github.com/Jmlevick/coffeeware-license>
 
-module.exports = (app) ->
-
-  # Dependencies
-  auth = require('http-auth')
-  crypto = require('crypto')
-  digest = require('../adminAuth')
+module.exports = (app, auth, crypto) ->
+  # Digest
+  digest = require('../../extras/crypto-auth-mean')(auth, crypto)
 
   # Model Loading
   Dummy = require('./model')
@@ -38,4 +35,4 @@ module.exports = (app) ->
   app.get "/dummies/admin", auth.connect(digest), (req, res, next) ->
     Dummy.find().exec (err, dummies) ->
       return next(err)  if err
-      res.render("dummies/admin.jade", {dummies: dummies})
+      res.render("entity_views/dummies/admin.jade", {dummies: dummies})

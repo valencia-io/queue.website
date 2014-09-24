@@ -1,14 +1,14 @@
 # App Routes
-# MEAN Boilerplate by @Jmlevick - http://twitter.com/Jmlevick
-# License: Coffeeware
+# MEAN Boilerplate by @Jmlevick <https://twitter.com/Jmlevick>
+# License: Coffeeware <https://github.com/Jmlevick/coffeeware-license>
 
-module.exports = (app) ->
+module.exports = (app, auth, crypto) ->
 
   # Basic
 
   app.get "/", (req, res) ->
-    res.render("dummies/index.jade")
+    res.render("home.jade")
 
   # Imports
 
-  require('./entities/dummies/controller')(app)
+  require('./entities/dummies/controller')(app, auth, crypto)

@@ -2,38 +2,47 @@
 
 # MEAN Boilerplate
 
-## Versión *Light* del MEAN Stack
+## Lightweight implementation of the "MEAN Stack"
 
-Nada demasiado especial bajo el sol, esta es una aplicación "boilerplate" para implementación del famoso *MEAN Stack* personalizada para ser "un poco menos confusa" y "un tanto más modular"... 
+*Modular, easy-to-use (yet powerful) boilerplate for building MEAN-powered apps & sites.*
 
-La aplicación usa/incluye:
+This boilerplate includes:
 
- - Uso del MEAN Stack completo (MongoDB, ExpressJS, AngularJS & NodeJS)
- - Estructura MVC
- - Configuración YAML
- - Script nodemon para iniciar
- - Coffeescript
- - LESS
- - IE Fix 
- - Twitter Bootstrap 
- - jQuery
- - Middleware para Error Handling
- - Optimizaciones SEO
- - Shell script para inicialización 
- - Digest auth + Salt para contenido protegido
+ - Full MEAN Stack usage (MongoDB, ExpressJS, AngularJS & NodeJS)
+ - MVC structure
+ - YAML configuration capabilities
+ - nodemon script for startup/development
+ - Coffeescript as main scripting language
+ - LESS as main styling language
+ - IE Fixes 
+ - Bower usage
+ - Twitter Bootstrap, jQuery, Angular-Resource (for AngularJS) & Font-Awesome included by default
+ - Built-in error handling
+ - SEO Optimizations
+ - Built-in crypted-auth restriction for accesing admin-only content
+ - Built-in multi-thread support (clusterization)
 
-### Implementación y uso
+It's worth to mention that the boilerplate uses the **latest stable version** available from all of it's dependencies/libraries on each project creation, and this repository gets constantly updated so the boilerplate can keep up with non-backward compatible changes and/or deprecations as they surge. This project it's meant to be production-focused, so use it with confidence ;)
 
-Favor de leer: [Workflow NodeJS: Usando el MEAN Stack en Linux y MacOS][2]
+### Usage
+
+Assuming you already have the needed **MEAN Stack** pieces installed on your computer/server (**MongoDB**, **NodeJS** & **ExpressJS**); plus **Git** and **Bower**, just run:
 
 
-Creado por: [@Jmlevick][3]  
-Licencia: [Coffeeware][4]
+    1. git clone https://github.com/Jmlevick/mean-boilerplate.git MY_APP
+    2. cd MY_APP
+    3. git init
+    4. npm install
+    5. bower install
 
-[![endorse](http://api.coderwall.com/jmlevick/endorsecount.png)](http://coderwall.com/jmlevick)
+Replacing **MY_APP** with the name of the app/site you wanna create.
+
+Created by: [@Jmlevick][2]  
+License: [Coffeeware][3]
+
+[![endorse](https://api.coderwall.com/jmlevick/endorsecount.png)](https://coderwall.com/jmlevick)
 
 
   [1]: https://spideroak.com/share/PBSW433EMVZXS43UMVWXG/78656e6f6465/srv/CDN/xenodecdn/github-assets/mean-boilerplate-logo.png
-  [2]: http://xenodesystems.blogspot.com/2014/02/workflow-nodejs-usando-el-mean-stack-en.html
-  [3]: http://twitter.com/Jmlevick
-  [4]: https://github.com/Jmlevick/coffeeware-license
+  [2]: https://twitter.com/Jmlevick
+  [3]: https://github.com/Jmlevick/coffeeware-license

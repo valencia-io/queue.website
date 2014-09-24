@@ -1,5 +1,10 @@
-# Ignorando JPG's y PNG's
+# Ignore images on the root (Logos & stuff)
 
 /*.jpg
 /*.jpeg
 /*.png
+
+# Commonly ignored folders
+
+node_modules
+public/bower_components
