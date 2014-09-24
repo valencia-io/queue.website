@@ -26,7 +26,7 @@ It's worth to mention that the boilerplate uses the **latest stable version** av
 
 ### Usage
 
-Assuming you already have the needed **MEAN Stack** pieces installed on your computer/server (**MongoDB**, **NodeJS** & **ExpressJS**); plus **Git** and **Bower**, just run:
+Assuming you already have the needed **MEAN Stack** pieces installed on your computer/server (**[MongoDB][2]**, **[NodeJS][3]** & **[ExpressJS][4]**); plus **[Git][5]** and **[Bower][6]**, just run:
 
 
     1. git clone https://github.com/Jmlevick/mean-boilerplate.git MY_APP
@@ -41,12 +41,17 @@ Replacing **MY_APP** with the name of the app/site you wanna create... To see yo
     
 From inside your app's folder and then open **http://localhost:3000** in your browser.
 
-Created by: [@Jmlevick][2]  
-License: [Coffeeware][3]
+Created by: [@Jmlevick][7]  
+License: [Coffeeware][8]
 
-[![endorse](https://api.coderwall.com/jmlevick/endorsecount.png)](https://coderwall.com/jmlevick)
+[![endorse](http://api.coderwall.com/jmlevick/endorsecount.png)](https://coderwall.com/jmlevick)
 
 
   [1]: https://spideroak.com/share/PBSW433EMVZXS43UMVWXG/78656e6f6465/srv/CDN/xenodecdn/github-assets/mean-boilerplate-logo.png
-  [2]: https://twitter.com/Jmlevick
-  [3]: https://github.com/Jmlevick/coffeeware-license
+  [2]: http://www.mongodb.org/
+  [3]: http://www.nodejs.org/
+  [4]: http://expressjs.com/
+  [5]: http://www.git-scm.com/
+  [6]: http://bower.io/
+  [7]: https://twitter.com/Jmlevick
+  [8]: https://github.com/Jmlevick/coffeeware-license
