@@ -30,15 +30,14 @@ It's worth to mention that the boilerplate uses the **latest stable version** av
 
 ### Usage
 
-Assuming you already have the needed **MEAN Stack** pieces installed on your computer/server (**[MongoDB][2]**, **[NodeJS][3]** & **[ExpressJS][4]**); plus **[Git][5]**, **[Bower][6]** and **[Ruby/Rubygems][9]**, just run:
+Assuming you already have the needed **MEAN Stack** pieces installed on your computer/server (**[MongoDB][2]**, **[NodeJS][3]** & **[ExpressJS][4]**) plus **[Git][5]**, **[Bower][6]** and **[Ruby/Rubygems][9]** (with the **bundle** gem previously installed); Just run:
 
-    1. gem install bundle
-    2. git clone https://github.com/Jmlevick/mean-boilerplate.git MY_APP
-    3. cd MY_APP
-    4. git init
-    5. bundle install
-    6. npm install
-    7. bower install
+    1. git clone https://github.com/Jmlevick/mean-boilerplate.git MY_APP
+    2. cd MY_APP
+    3. git init
+    4. bundle install
+    5. npm install
+    6. bower install
 
 Replacing **MY_APP** with the name of the app/site you wanna create... To see your newly created app in action, just run:
 
