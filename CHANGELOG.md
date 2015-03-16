@@ -10,7 +10,7 @@
 - Better modularization of the code & usage of YAML config
 - Added Bootswatch & Bootbox
 - Added ngAnimate 
-- Added "coffeejs" command to run coffeescript watcher for static files
+- Added "coffeejs" npm command to run coffeescript watcher for static files
 - Added connect-timeout for cutting long requests
 - Updated frontend layout
 - Updated backend code
