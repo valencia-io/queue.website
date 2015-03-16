@@ -1,6 +1,6 @@
 ## Version 3.0.0
 
-- Updated to latest coffee-script backend
+- Updated to latest coffee-script branch (1.9.x)
 - Session handling & persistence added via connect-mongo
 - Cron jobs handling via the whenever ruby gem
 - Flash messages support via connect-flash
