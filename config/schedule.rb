@@ -26,7 +26,7 @@ set :output, "#{path}/log/cron.log"
 
 # After declaring your cron jobs here, run:
 
-# $ cd MY-APP 
+# $ cd MY_APP 
 # $ bundle exec whenever
 # $ whenever -i
 # $ crontab -l
