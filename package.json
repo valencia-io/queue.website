@@ -1,15 +1,16 @@
 {
   "name": "meanBoilerplate",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "nodemon app.js",
+    "coffeejs": "cd public && coffee -o js/ -cw coffee/"
   },
   "dependencies": {
     "express": "4.x",
     "jade": "*",
     "less-middleware": "*",
-    "coffee-script": "1.6.x",
+    "coffee-script": "*",
     "mongoose": "3.x",
     "http-auth": "*",
     "crypto": "*",
@@ -20,7 +21,14 @@
     "method-override": "*",
     "morgan": "*",
     "errorhandler": "*",
-    "cluster": "*"
+    "cluster": "*",
+    "cookie-parser": "*",
+    "express-session": "*",
+    "connect-mongo": "*",
+    "connect-timeout": "*",
+    "connect-flash": "*",
+    "multer": "*",
+    "express-device": "*"
   },
   "devDependencies": {
     "nodemon": "*"

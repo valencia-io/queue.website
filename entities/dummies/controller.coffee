@@ -2,9 +2,7 @@
 # MEAN Boilerplate by @Jmlevick <https://twitter.com/Jmlevick>
 # License: Coffeeware <https://github.com/Jmlevick/coffeeware-license>
 
-module.exports = (app, auth, crypto) ->
-  # Digest
-  digest = require('../../extras/crypto-auth-mean')(auth, crypto)
+module.exports = (app, auth, digest) ->
 
   # Model Loading
   Dummy = require('./model')

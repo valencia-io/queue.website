@@ -2,7 +2,7 @@
 # MEAN Boilerplate by @Jmlevick <https://twitter.com/Jmlevick>
 # License: Coffeeware <https://github.com/Jmlevick/coffeeware-license>
 
-module.exports = (app, auth, crypto) ->
+module.exports = (app, auth, digest) ->
 
   # Basic
 
@@ -11,4 +11,4 @@ module.exports = (app, auth, crypto) ->
 
   # Imports
 
-  require('./entities/dummies/controller')(app, auth, crypto)
+  require('./entities/dummies/controller')(app, auth, digest)
