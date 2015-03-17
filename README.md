@@ -2,7 +2,7 @@
 
 # MEAN Boilerplate
 
-[![tipme](https://lh4.googleusercontent.com/5hL7LnYT_LCcQiM7oT_Ck12Ul6yudIYPchsIqrZnOGJN_BAhf7z64H5JkhocTOUsXDJYvOkjmfNxSOM=w1256-h549)](https://www.changetip.com/tipme/jmlevick) [![endorse](http://api.coderwall.com/jmlevick/endorsecount.png)](https://coderwall.com/jmlevick)
+[![tipme](https://spideroak.com/share/PBSW433EMVZXS43UMVWXG/78656e6f6465/srv/CDN/xenodecdn/tipme-small.png)](https://www.changetip.com/tipme/jmlevick) [![endorse](http://api.coderwall.com/jmlevick/endorsecount.png)](https://coderwall.com/jmlevick)
 
 ## Lightweight implementation of the "MEAN Stack"
 
@@ -50,7 +50,7 @@ From inside your app's folder and then open **http://localhost:3000** in your br
 Created by: [@Jmlevick][7]  
 License: [Coffeeware][8]
 
-[![tipme](https://lh4.googleusercontent.com/5hL7LnYT_LCcQiM7oT_Ck12Ul6yudIYPchsIqrZnOGJN_BAhf7z64H5JkhocTOUsXDJYvOkjmfNxSOM=w1256-h549)](https://www.changetip.com/tipme/jmlevick) [![endorse](http://api.coderwall.com/jmlevick/endorsecount.png)](https://coderwall.com/jmlevick)
+[![tipme](https://spideroak.com/share/PBSW433EMVZXS43UMVWXG/78656e6f6465/srv/CDN/xenodecdn/tipme-small.png)](https://www.changetip.com/tipme/jmlevick) [![endorse](http://api.coderwall.com/jmlevick/endorsecount.png)](https://coderwall.com/jmlevick)
 
   [1]: https://spideroak.com/share/PBSW433EMVZXS43UMVWXG/78656e6f6465/srv/CDN/xenodecdn/github-assets/mean-boilerplate-logo.png
   [2]: http://www.mongodb.org/
