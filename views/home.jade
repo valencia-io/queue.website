@@ -28,9 +28,9 @@ block content
     h3 Getting started
     br
     ol.tips
-      li Set up your database
+      li Set up your database & Sessions Secret
       br
-      | <b>Edit</b> <code>mongodb_uri</code> @ <code>config/app.yaml</code>
+      | <b>Edit</b> <code>mongodb_uri</code> & <code>sessions_secret</code> @ <code>config/app.yaml</code>
       br
       br
       li Create a superuser for your project
@@ -42,6 +42,7 @@ block content
       br
       | <b>Run</b> <code>npm run scaffold --singular="post" --plural="posts"</code> (for example)
       br
+      | Restart your app
     h3 Other useful npm tasks
     ol.tips
       li jscoffee
