@@ -1,4 +1,4 @@
-//- Restricted zone (Manage Dummies)
+//- Show all Dummies
 //- MEAN Boilerplate by @Jmlevick <https://twitter.com/Jmlevick>
 //- License: Coffeeware <https://github.com/Jmlevick/coffeeware-license>
 
@@ -7,6 +7,6 @@ extends ../../layout
 block content
   img(src='/img/expressjs.png', alt='Logo', id="logo")
   h1 Hello <span class="mean">{{guest.name}}</span>
-  p This is a <b>restricted zone</b> of the app, you're at: <b>dummies#admin</b>
+  p This is a boilerplate app and you're @ <b>dummies#index</b>
   .input-group.input-group-sm#demoinput
-    input.form-control(type='text', placeholder='Your Name...', id="texti", ng-model="guest.name", ng-init="guest.name='Admin'")
+    input.form-control(type='text', placeholder='Your Name...', id="texti", ng-model="guest.name", ng-init="guest.name='MEAN'")

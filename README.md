@@ -8,23 +8,35 @@
 
 *Modular, easy-to-use (yet powerful) boilerplate for building MEAN-powered apps & sites.*
 
-This boilerplate includes:
+### This boilerplate includes:
 
- - Full MEAN Stack usage (MongoDB, ExpressJS, AngularJS & NodeJS)
- - MVC structure
- - YAML configuration capabilities
- - Multi-threading (clusterization) with session persistence support
- - Cron jobs handling using Ruby
- - Coffeescript as main scripting language
- - LESS as main styling language
- - File upload built-in using multer
- - IE fixes & built-in mobile/bot detection
- - Bower for assets & libs
- - Twitter Bootstrap (with BootboxJS/Bootswatch), jQuery, AngularJS (with ngResource/ngAnimate) & Font-Awesome included by default
- - Built-in error handling
- - SEO Optimizations
- - Built-in crypted-auth restriction for accesing admin-only content
- - nodemon/npm script automatization for startup/development
+- Full MEAN Stack usage (MongoDB, ExpressJS, AngularJS & NodeJS)
+- MVC structure
+- Multi-threading (clusterization) with session persistence support
+- Scaffold Generator
+- Superuser Generator
+- Bower for assets/libs managemet
+- NPM as task manager (instead of Grunt/Gulp)
+- YAML configuration capabilities
+- Coffeescript as main scripting language & SaSS as main styling language
+- Cronjob handling using Ruby
+- Built-in Authentication & Authorization Middlewares
+- Built-in error handling
+- Twitter Bootstrap, jQuery & Font-Awesome included by default
+- Bootswatch themes & BootboxJS
+- ngResource & ngAnimate
+- IE fixes & built-in mobile/bot detection
+- SEO Optimizations
+
+### Available NPM Tasks:
+
+- **start:** Starts the project via **nodemon**
+- **jscoffee:** Live compiling of **.coffee** files to **minified .js**
+- **coffeejs:** Live compiling of **.coffee** files to **non-minified .js**
+- **smushimg:** Lossless compression for all the images used in your project via **Smushit!**
+- **createadmin:** A task for creating a project-wide **superuser**
+- **scaffold:** Magical **scaffold generator**, Finally!
+
 
 > For more details, please read **[CHANGELOG.md][10]**
 
@@ -32,7 +44,7 @@ It's worth to mention that the boilerplate uses the **latest stable version** av
 
 ### Usage
 
-Assuming you already have the needed **MEAN Stack** pieces installed on your computer/server (**[MongoDB][2]**, **[NodeJS][3]** & **[ExpressJS][4]**) plus **[Git][5]**, **[Bower][6]** and **[Ruby/Rubygems][9]** (with the **bundle** gem previously installed); Just run:
+Assuming you already have the needed **MEAN Stack** pieces installed on your computer/server (**[MongoDB][2]**, **[NodeJS][3]** & **[ExpressJS][4]**) plus **[Git][5]**, **[Bower][6]** and **[Ruby/Rubygems][9]** (with the **bundle/bundler** gems previously installed); Just run:
 
     1. git clone https://github.com/Jmlevick/mean-boilerplate.git MY_APP
     2. cd MY_APP
@@ -44,8 +56,12 @@ Assuming you already have the needed **MEAN Stack** pieces installed on your com
 Replacing **MY_APP** with the name of the app/site you wanna create... To see your newly created app in action, just run:
 
     npm start
-    
-From inside your app's folder and then open **http://localhost:3000** in your browser.
+
+From inside your app's folder and then open **http://localhost:3000** in your browser... Then, on another terminal tab run:
+
+    npm run jscoffee
+
+So that your **.coffee** files are watched for changes. The welcome page on **localhost:3000** will guide you further on how to use the **MEAN Boilerplate**.
 
 Created by: [@Jmlevick][7]  
 License: [Coffeeware][8]

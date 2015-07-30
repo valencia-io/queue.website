@@ -4,18 +4,20 @@
 * License: Coffeeware <https://github.com/Jmlevick/coffeeware-license>
 */
 
+'use strict'
+
 // Module Dependencies
 require('coffee-script');
+require('coffee-script/register');
 
 var express = require('express');
 var http = require('http');
 var path = require('path');
-var auth = require('http-auth');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
-var static = require('serve-static');
+var static_dir = require('serve-static');
 var errorHandler = require('errorhandler');
 var crypto = require('crypto')
 var cluster = require('cluster');
@@ -24,9 +26,7 @@ var session = require('express-session');
 var MongoStore = require('connect-mongo')(session);
 var timeout = require('connect-timeout');
 var flash = require('connect-flash');
-var multer = require('multer');
 var device = require('express-device');
-var digest = require('./extras/crypto-auth-mean')(auth, crypto);
 
 // YAML Load
 var config = require('yaml-config');
@@ -34,6 +34,7 @@ var settings = config.readConfig('config/app.yaml');
 
 // The application
 if (cluster.isMaster) {
+  var cpuCount, i = undefined;
   cpuCount = require("os").cpus().length;
   i = 0;
   while (i < cpuCount) {
@@ -47,23 +48,16 @@ if (cluster.isMaster) {
   var server = app.listen(port);
 
   // Extras
-  app.use(multer({ dest: './uploads/',
-     rename: function (fieldname, filename) {
-        return filename+Date.now();
-      },
-    onFileUploadStart: function (file) {
-      console.log(file.originalname + ' is starting ...')
-    },
-    onFileUploadComplete: function (file) {
-      console.log(file.fieldname + ' uploaded to  ' + file.path)
-      done=true;
-    }
-    }));
+  // Passport Logic
+  var passport = require('passport')
+  , LocalStrategy = require('passport-local').Strategy;
+  var User = require('./entities/users/model');
+  require('./extras/passport')(passport, LocalStrategy, User);
 
   // all environments
   app.set('views', path.join(__dirname, 'views'));
   app.set('view engine', 'jade');
-  app.use(favicon(path.join(__dirname, 'public/favicon.ico'))); 
+  app.use(favicon(path.join(__dirname, 'public/favicon.ico')));
   app.use(logger('dev'));
   app.use(cookieParser());
   app.use(bodyParser.json());
@@ -77,13 +71,21 @@ if (cluster.isMaster) {
       resave: true,
       store: new MongoStore({url: settings.mongodb_uri + "/sessions"})
     }));
-  
+
+  app.use(passport.initialize());
+  app.use(passport.session());
   app.use(flash());
   app.use(methodOverride());
   require('./extras/middleware')(app);
-  var routes = require('./routes')(app, auth, digest);
-  app.use(require('less-middleware')(path.join(__dirname, 'public')));
-  app.use(static(path.join(__dirname, 'public')));
+  var routes = require('./routes')(app, passport);
+  app.use(require('node-sass-middleware')({
+    root: path.join(__dirname, 'public'),
+    src: 'scss',
+    dest: 'css',
+    outputStyle: 'compressed',
+    prefix: '/css'
+  }));
+  app.use(static_dir(path.join(__dirname, 'public')));
 
 
   // Error Handling (Uncomment in production!)
@@ -94,7 +96,7 @@ if (cluster.isMaster) {
 
   // 500
   // app.use(function(err, req, res, next) {
-  //  res.status(500).send(err: "500: Server Error");
+  //  res.status(500).send(err, "500: Server Error");
   // });
 
   // Development only
@@ -103,6 +105,7 @@ if (cluster.isMaster) {
   }
 
   http.createServer(app).listen(app.get(port), function(){
+    var cpuNum = undefined;
     cpuNum = parseInt(cluster.worker.id) - 1
     cpuNum = cpuNum.toString()
     console.log('Express server listening on port ' + port + ', cpu:worker:' + cpuNum);
@@ -110,6 +113,7 @@ if (cluster.isMaster) {
 }
 
 cluster.on('exit', function (worker) {
+    var cpuNum = undefined;
     cpuNum = parseInt(worker.id) - 1
     cpuNum = cpuNum.toString()
     console.log('cpu:worker:' + cpuNum + ' died unexpectedly, respawning...');

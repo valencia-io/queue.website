@@ -8,5 +8,5 @@ npm-debug.log
 
 # Commonly ignored folders
 node_modules
-public/bower_components
+public/bower/bower_components
 

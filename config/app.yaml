@@ -1,27 +1,15 @@
 default:
-  adminuser: "admin"
-  password: "Mypass000"
-  section_token: "Please enter admin credentials"
   mongodb_uri: "mongodb://localhost/meandb"
   sessions_secret: "secret"
 
 development:
-  adminuser: "admin"
-  password: "Mypass000"
-  section_token: "Please enter admin credentials"
   mongodb_uri: "mongodb://localhost/meandb"
   sessions_secret: "secret"
 
 test:
-  adminuser: "admin"
-  password: "Mypass000"
-  section_token: "Please enter admin credentials"
   mongodb_uri: "mongodb://localhost/meandb"
   sessions_secret: "secret"
 
 production:
-  adminuser: "admin"
-  password: "Mypass000"
-  section_token: "Please enter admin credentials"
   mongodb_uri: "mongodb://localhost/meandb"
   sessions_secret: "secret"
