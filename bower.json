@@ -1,11 +1,11 @@
 {
   "name": "mean-boilerplate",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "homepage": "https://github.com/Jmlevick/mean-boilerplate",
   "authors": [
-    "Manuel Escudero <https://twitter.com/Jmlevick>"
+    "Manuel Escudero <http://jmlevick.me>"
   ],
-  "description": "Lightweight MEAN Stack",
+  "description": "Lightweight MEAN Stack boilerplate",
   "keywords": [
     "mean-stack",
     "boilerplate",
@@ -19,7 +19,7 @@
   "ignore": [
     "**/.*",
     "node_modules",
-    "public/bower_components",
+    "public/bower/bower_components",
     "test",
     "tests"
   ],

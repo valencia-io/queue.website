@@ -74,7 +74,7 @@ License: [Coffeeware][8]
   [4]: http://expressjs.com/
   [5]: http://www.git-scm.com/
   [6]: http://bower.io/
-  [7]: https://twitter.com/Jmlevick
+  [7]: http://jmlevick.me
   [8]: https://github.com/Jmlevick/coffeeware-license
   [9]: https://www.ruby-lang.org/en/documentation/installation/
   [10]: https://github.com/Jmlevick/mean-boilerplate/blob/master/CHANGELOG.md

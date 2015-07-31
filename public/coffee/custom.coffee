@@ -1,7 +1,7 @@
 # Custom coffee code goes here (client side, app-wide)
-# Ideal for jQuery functions.
-# MEAN Boilerplate by @Jmlevick <https://twitter.com/Jmlevick>
+# Ideal for jQuery functions and other stuff.
+# MEAN Boilerplate by @Jmlevick <http://jmlevick.me>
 # License: Coffeeware <https://github.com/Jmlevick/coffeeware-license>
 
 $ ->
-  $("#texti").val("")  
+  $("#texti").val("")

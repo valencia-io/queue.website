@@ -28,7 +28,7 @@ var timeout = require('connect-timeout');
 var flash = require('connect-flash');
 var device = require('express-device');
 
-// YAML Load
+// YAML Loading
 var config = require('yaml-config');
 var settings = config.readConfig('config/app.yaml');
 

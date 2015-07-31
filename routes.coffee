@@ -1,5 +1,5 @@
 # App Routes
-# MEAN Boilerplate by @Jmlevick <https://twitter.com/Jmlevick>
+# MEAN Boilerplate by @Jmlevick <http://jmlevick.me>
 # License: Coffeeware <https://github.com/Jmlevick/coffeeware-license>
 
 module.exports = (app, passport) ->

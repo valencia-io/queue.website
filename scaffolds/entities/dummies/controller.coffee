@@ -1,5 +1,5 @@
 # The Controller
-# MEAN Boilerplate by @Jmlevick <https://twitter.com/Jmlevick>
+# MEAN Boilerplate by @Jmlevick <http://jmlevick.me>
 # License: Coffeeware <https://github.com/Jmlevick/coffeeware-license>
 
 module.exports = (app) ->
@@ -31,7 +31,6 @@ module.exports = (app) ->
 
 
   # Admin
-
   app.get "/dummies/admin", (req, res, next) ->
     if req.user? and req.user.is_admin is true
       Dummy.find().exec (err, dummies) ->
