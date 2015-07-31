@@ -34,7 +34,7 @@
 - **jscoffee:** Live compiling of **.coffee** files to **minified .js**
 - **coffeejs:** Live compiling of **.coffee** files to **non-minified .js**
 - **smushimg:** Lossless compression for all the images used in your project via **Smushit!**
-- **createadmin:** A task for creating a project-wide **superuser**
+- **createadmin:** Task for creating a project-wide **superuser**
 - **scaffold:** Magical **scaffold generator**, Finally!
 
 
