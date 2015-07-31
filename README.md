@@ -15,8 +15,8 @@
 - Multi-threading (clusterization) with session persistence support
 - Scaffold Generator
 - Superuser Generator
-- Bower for assets/libs managemet
 - NPM as task manager (instead of Grunt/Gulp)
+- Bower for assets/libs managemet
 - YAML configuration capabilities
 - Coffeescript as main scripting language & SaSS as main styling language
 - Cronjob handling using Ruby
