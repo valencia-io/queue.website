@@ -1,6 +1,6 @@
 # Scaffold Generator
-# MEAN Boilerplate by @Jmlevick <http://jmlevick.me>
-# License: Coffeeware <https://github.com/Jmlevick/coffeeware-license>
+
+# 
 
 fs = require('fs-extra')
 path = require('path')

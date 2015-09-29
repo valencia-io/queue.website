@@ -1,6 +1,6 @@
 # Create Admin
-# MEAN Boilerplate by @Jmlevick <http://jmlevick.me>
-# License: Coffeeware <https://github.com/Jmlevick/coffeeware-license>
+
+#
 
 mongoose = require('mongoose')
 bcrypt = require('bcrypt')

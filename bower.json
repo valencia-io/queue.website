@@ -1,11 +1,11 @@
 {
-  "name": "mean-boilerplate",
-  "version": "4.0.0",
-  "homepage": "https://github.com/Jmlevick/mean-boilerplate",
+  "name": "queue.website",
+  "version": "0.1.0",
+  "homepage": "https://github.com/jupegarnica/queue.website.git",
   "authors": [
-    "Manuel Escudero <http://jmlevick.me>"
+    "jupegarnica.com"
   ],
-  "description": "Lightweight MEAN Stack boilerplate",
+  "description": "queues made simple. The ultimate referral's tool",
   "keywords": [
     "mean-stack",
     "boilerplate",
@@ -15,25 +15,21 @@
     "nodejs",
     "jmlevick"
   ],
-  "license": "Coffeeware <https://github.com/Jmlevick/coffeeware-license>",
+  "license": "MIT",
   "ignore": [
     "**/.*",
     "node_modules",
     "public/bower/bower_components",
     "test",
-    "tests"
+    "tests",
+    "bower_components"
   ],
   "dependencies": {
-    "html5shiv": "*",
-    "respond": "*",
-    "jquery": "*",
-    "bootstrap": "*",
-    "bootswatch": "*",
-    "bootbox": "*",
-    "angular": "*",
-    "angular-resource": "*",
-    "angular-animate": "*",
-    "angular-animate-css": "*",
-    "font-awesome": "*"
-  }
+    "angular-material": "~0.11.1"
+  },
+  "main": "",
+  "moduleType": [
+    "globals",
+    "node"
+  ]
 }

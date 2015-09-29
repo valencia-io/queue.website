@@ -1,6 +1,6 @@
 # The Model
-# MEAN Boilerplate by @Jmlevick <http://jmlevick.me>
-# License: Coffeeware <https://github.com/Jmlevick/coffeeware-license>
+
+# 
 
 # YAML Loading
 mongoose = require('mongoose')
